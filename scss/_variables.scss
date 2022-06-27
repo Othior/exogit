@@ -1,5 +1,5 @@
-$color_primaire : violet;
-$color_secondaire: grey;
+$color_primaire : #00C2DB;
+$color_secondaire: #00E1FF;
 $color_primaire_complement: complement($color_primaire);
 $color_primaire_light: lighten($color_primaire,70);
 $breackpoint: 860px;
