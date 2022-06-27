@@ -1,0 +1,48 @@
+.contenu_contact{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  justify-content: center;
+  align-content: center;
+  border-radius: 15px;
+  width: 100vw;
+  height: 80vh;
+  padding: 1rem;
+  font-family: "Nunito", sans-serif;
+  background: url("https://images.unsplash.com/photo-1535868463750-c78d9543614f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1476&q=80") no-repeat 100% contains;
+  background-position-x: -10rem;
+  .text_contenu_contact{
+    grid-column: 1/2;
+    color: $color_text_blanc_contact;
+    h1{
+      font-size: 4rem;
+    }
+  }
+  .formulaire_contact{
+    background: #000;
+    height: 100%;
+    grid-column: 2/3;
+    padding-inline-start: 1rem;
+    section{
+      margin: 1rem;
+      display: flex;
+      flex-direction: column;
+    }
+    input , textarea{
+      padding: 0.5rem 2rem;
+      border: none;
+      background: transparent;
+      border-bottom: 1px solid $color_border_blanc_contact;
+      outline: none;
+      color: $color_text_blanc_contact;
+    }
+    button[type="submit"]{
+      margin: 1rem;
+      padding: 0.5rem 2rem;
+      border: none;
+      font-size: 1rem;
+    }
+    label{
+      color: $color_text_blanc_contact;
+    }
+  }
+}
